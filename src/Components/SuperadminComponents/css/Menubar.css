@@ -1,0 +1,100 @@
+.menubar-wrapper {
+  display: flex;
+  flex-direction: row; /* Change from column to row to align both menus side by side */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent scrolling outside the component */
+}
+
+.horizontal-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 250px; /* Adjust the left position to avoid overlap with the vertical menu */
+  width: calc(100% - 250px); /* Adjust width to account for the vertical menu */
+  z-index: 1000;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.menu-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  color: #eaeef1;
+}
+
+.menu-icons i:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.vertical-menu {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #495057;
+}
+
+.logo img {
+  width: 120px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-weight: bold;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-list li:hover {
+  background-color: #495057;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+  background-color: #495057;
+}
+
+.submenu li {
+  padding: 10px 10px;
+}
+
+.submenu li:hover {
+  background-color: #6c757d;
+}

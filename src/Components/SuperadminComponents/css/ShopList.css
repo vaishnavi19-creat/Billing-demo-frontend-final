@@ -1,0 +1,309 @@
+/* Shop List Container */
+.shop-list-container {
+    margin-left: 240px; /* Reduced left margin */
+    margin-top: 20px;
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+/* Title Styling */
+.shop-list-container h2 {
+    margin-bottom: 15px; 
+    font-size: 1.5rem; 
+    color: #343a40;
+    text-align: center;
+}
+
+/* Filter and Sort Section Styles */
+.filter-sort-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 6px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.sort-dropdown {
+    padding: 6px; 
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Table Styles */
+.shop-table {
+    width: 100%; /* Corrected width to 100% */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(78, 67, 67, 0.1); 
+    margin-bottom: 50px; /* Decreased the bottom margin to reduce space */
+}
+
+.shop-table th {
+    background-color: #2a3036bc;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.shop-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.shop-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.shop-table tr:hover {
+    background-color: #e9e9e9;
+}
+
+/* Action Buttons */
+.action-button {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.view {
+    background-color: #007bff;
+}
+
+.update {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.delete {
+    background-color: #dc3545;
+}
+
+.action-button:hover {
+    opacity: 0.9;
+}
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #2b2c2d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #2b2c2d;
+    font-weight: bold;
+}
+
+/* Dropdown Menu Styles */
+.view-mode-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 100;
+    width: 200px; /* Set a fixed width for the dropdown */
+    top: 30px; /* Adjust for the position */
+}
+
+.menu-icon:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Card View Styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly; /* Ensures cards are spread out horizontally */
+}
+
+.shop-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(78, 67, 67, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-card h3 {
+    margin: 0 0 10px;
+}
+
+.shop-card p {
+    margin: 5px 0;
+}
+
+/* List View */
+.list-view-container {
+    display: block;
+    margin-top: 20px;
+}
+
+.shop-list-item {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.shop-list-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shop-list-container {
+        margin-left: 0;
+    }
+
+    .search-input,
+    .sort-dropdown {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .action-button {
+        padding: 6px 8px;
+        font-size: 0.75rem;
+    }
+
+    /* Card view layout for mobile */
+    .card-container {
+        flex-direction: row; /* Ensures cards display horizontally */
+        justify-content: center;
+    }
+
+    .shop-card {
+        width: 100%; /* Ensure it uses full width on small screens */
+    }
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #7a7777;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+    background-color: #2b2c2d;
+    color: #fff;
+}
+
+.modal-content button:nth-child(1) {
+    background-color: #2196f3;
+}
+
+.modal-content button:nth-child(2) {
+    background-color: #f44336;
+}
+
+.modal-content button:hover {
+    opacity: 0.9;
+}

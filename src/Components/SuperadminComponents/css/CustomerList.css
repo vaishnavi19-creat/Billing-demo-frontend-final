@@ -1,0 +1,343 @@
+.customer-list-container {
+  margin-left: 250px;
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Title */
+.customer-list-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search and sorting section */
+.filter-sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Search input box */
+.search-input {
+  padding: 10px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Sort dropdown */
+.sort-dropdown {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* View mode dropdown button */
+.view-mode-dropdown {
+  position: relative;
+}
+
+.menu-icon {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 150px;
+}
+
+.dropdown-menu button {
+  padding: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Table styling for list view */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+.customer-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.action-button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 2px;
+}
+
+.action-button.view {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.action-button.update {
+  background-color: #2196F3;
+  color: white;
+}
+
+.action-button.delete {
+  background-color: #F44336;
+  color: white;
+}
+
+.action-button:hover {
+  opacity: 0.8;
+}
+
+
+/* Card View Styling */
+.card-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+.customer-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  min-height: 280px;
+  box-sizing: border-box; 
+}
+
+.customer-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.customer-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  margin-top: auto; 
+}
+
+/* Action Buttons Styling */
+.card-actions .action-button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  width: 100%; 
+}
+
+/* Individual Button Styles */
+.card-actions .action-button.view {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.card-actions .action-button.update {
+  background-color: #2196F3;
+  color: white;
+}
+
+.card-actions .action-button.delete {
+  background-color: #F44336;
+  color: white;
+}
+
+.card-actions .action-button.add-shop {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.card-actions .action-button.add-shop:hover {
+  background-color: #45a049; 
+}
+
+/* Optional: Hover Effects for Buttons */
+.card-actions .action-button:hover {
+  opacity: 0.8;
+}
+
+/*pagination css*/
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+  padding: 10px 0;
+}
+
+.pagination-button {
+  background-color: #1a1a1b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #1b1c1c;
+}
+
+.pagination-container span {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.save-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  padding: 10px 20px;
+  background-color: #F44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.close-button:hover {
+  background-color: #e53935;
+}
+
+
+/* Target the Add Shop button specifically */
+.action-button.add-shop {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Add hover effect for the Add Shop button */
+.action-button.add-shop:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,93 @@
+.admin-menubar-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent scrolling outside the component */
+}
+
+.admin-horizontal-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0; /* Ensure it starts at the very top */
+  left: 250px; /* Adjust to align with the vertical menu width */
+  right: 0; /* Ensure it stretches to the right */
+  z-index: 1;
+}
+
+.admin-search-bar input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.admin-menu-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  color: #eaeef1;
+}
+
+.admin-menu-icons i:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.admin-vertical-menu {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  height: 100vh; /* Ensure it stretches to full height */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0; /* Ensure it starts at the very top */
+  left: 0;
+  z-index: 2;
+}
+
+.admin-logo {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #495057;
+}
+
+.admin-logo img {
+  width: 120px;
+}
+
+.admin-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-menu-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.admin-menu-list li:hover {
+  background-color: #495057;
+}
+
+.admin-submenu {
+  list-style: none;
+  padding-left: 20px;
+  background-color: #495057;
+}
+
+.admin-submenu li {
+  padding: 10px 10px;
+}
+
+.admin-submenu li:hover {
+  background-color: #6c757d;
+}
+

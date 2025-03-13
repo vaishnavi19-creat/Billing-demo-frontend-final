@@ -1,0 +1,187 @@
+/* Scoped styling within the quotation-container */
+.quotation-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-left: 240px; /* Reduced left margin */
+    margin-top: 20px; /* Reduced top margin */
+}
+
+/* Shop Information Section */
+.quotation-container .shop-info {
+    margin-bottom: 20px;
+}
+
+.quotation-container .shop-info h4 {
+    margin: 0 0 10px;
+    color: #333;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Align text in the center horizontally */
+
+}
+
+.quotation-container .shop-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Quotation Details Section */
+.quotation-container .quotation-details {
+    max-width: 900px; /* Limit the width of the form container */
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 20px;
+}
+
+.quotation-container .quotation-details h5 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Updated Form Group Styling */
+.quotation-container .quotation-details .form-group {
+    display: flex; /* Arrange items in a row */
+    flex-wrap: wrap; /* Allow wrapping to next row if needed */
+    gap: 15px; /* Add spacing between items */
+    margin-bottom: 15px;
+}
+
+.quotation-container .quotation-details label {
+    width: 30%; /* Reduce label width */
+    min-width: 150px; /* Ensure minimum width */
+    margin-bottom: 0; /* Align with inputs */
+    font-size: 14px;
+    color: #444;
+}
+
+.quotation-container .quotation-details input,
+.quotation-container .quotation-details textarea {
+    flex: 1; /* Take up remaining space */
+    max-width: 65%; /* Limit the maximum width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Two-Column Layout */
+.quotation-container .quotation-details.two-columns .form-group {
+    justify-content: space-between; /* Spread items evenly */
+}
+
+/* Three-Column Layout */
+.quotation-container .quotation-details.three-columns .form-group {
+    justify-content: space-between; /* Spread items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping for three items */
+}
+
+/* Product Section */
+.quotation-container .product-section {
+    margin-bottom: 20px;
+}
+
+.quotation-container .product-section h5 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.quotation-container .product-section .form-group {
+    margin-bottom: 15px;
+}
+
+.quotation-container .product-section select,
+.quotation-container .product-section input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add Product Button */
+.quotation-container .product-section button {
+    padding: 10px 20px;
+    background-color: #222324;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.quotation-container .product-section button:hover {
+    background-color: #222323;
+}
+
+/* Quotation Products Table */
+.quotation-container .quotation-products table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.quotation-container .quotation-products th,
+.quotation-container .quotation-products td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.quotation-container .quotation-products th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.quotation-container .quotation-products td button {
+    padding: 5px 10px;
+    background-color: #222323;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quotation-container .quotation-products td button:hover {
+    background-color: #222323;
+}
+
+/* Quotation Summary */
+.quotation-container .quotation-summary {
+    margin-bottom: 20px;
+}
+
+.quotation-container .quotation-summary h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quotation-container .quotation-summary p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Actions Section */
+.quotation-container .actions button {
+    padding: 10px 20px;
+    background-color:#222323;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quotation-container .actions button:nth-child(2) {
+    background-color: #222323;
+}
+
+.quotation-container .actions button:hover:nth-child(2) {
+    background-color: #222323;
+}
+
+.quotation-container .actions button:hover {
+    background-color: #222323;
+}
